@@ -56,9 +56,12 @@
   ```bash
   nikto -h http://qayssarayra.com
   ```
-- **Dirb**:  
+- **Ffuf**:  
   ```bash
-  dirb http://qayssarayra.com
+  ffuf -u http://localhost/FUZZ -w /usr/share/wordlists/dirb/common.txt
+  ffuf -u http://localhost/FUZZ -w /usr/share/wordlists/dirb/common.txt -recursion
+  ffuf -u http://localhost/FUZZ -w /usr/share/wordlists/dirb/common.txt -fc 403,404
+  ffuf -u http://localhost/FUZZ -w /usr/share/wordlists/dirb/common.txt -o results.txt
   ```
 - **Enum4linux**:  
   ```bash
