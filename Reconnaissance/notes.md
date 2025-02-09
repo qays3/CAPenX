@@ -33,6 +33,11 @@
 - **SSL Labs' SSL Test**:  
   Visit: [https://www.ssllabs.com/ssltest/](https://www.ssllabs.com/ssltest/)
 
+` **TLS scan Misconfiguration**
+```bash
+  git clone https://github.com/drwetter/testssl.sh.git
+  cd testssl.sh 
+```
 ---
 
 ### **2. Active Reconnaissance**
