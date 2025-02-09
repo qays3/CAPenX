@@ -37,7 +37,7 @@
 #### **Step 3: Social Media & Web Research**
 - **TheHarvester**:  
   ```bash
-  theharvester -d qayssarayra.com -b all
+  theHarvester -d qayssarayra.com -b all
   ```
 - **SpiderFoot**:  
   ```bash
@@ -104,48 +104,8 @@
   wpscan --url http://qayssarayra.com
   ```
 
-#### **Step 7: Vulnerability Scanning**
-- **OpenVAS/GVM**:  
-  Use OpenVAS GUI or CLI for scanning.
-- **Nessus**:  
-  Use Nessus GUI for scanning.
-- **Metasploit**:  
-  ```bash
-  msfconsole
-  use auxiliary/scanner/portscan/tcp
-  set RHOSTS 77.37.125.41
-  run
-  ```
-- **Nmap Scripts (NSE)**:  
-  ```bash
-  nmap --script vuln qayssarayra.com
-  ```
-
-#### **Step 8: Exploitation Testing**
-- **Burp Suite**:  
-  Proxy traffic through Burp Suite manually.
-- **SQLmap**:  
-  ```bash
-  sqlmap -u "http://qayssarayra.com/page?id=1" --dbs
-  ```
-- **Hydra**:  
-  ```bash
-  hydra -l admin -P /path/to/passwords.txt ssh://77.37.125.41
-  ```
-- **Commix**:  
-  ```bash
-  commix -u "http://qayssarayra.com/page?id=1"
-  ```
-- **BeEF**:  
-  ```bash
-  beef-xss
-  ```
-
----
-
-### **Optional Steps for Enhanced Enumeration**
-
-#### **Step 9: Email Harvesting & Phishing Analysis**
+ 
+#### **Step 7: Email Harvesting & Phishing Analysis**
 - **Hunter.io**:  
   Visit: [https://hunter.io/](https://hunter.io/)
 - **EmailHarvester**:  
@@ -153,28 +113,8 @@
   emailharvester -d qayssarayra.com
   ```
 
-#### **Step 10: Cloud Infrastructure Enumeration**
-- **CloudMapper**:  
-  ```bash
-  cloudmapper collect --account example_account
-  ```
-- **Pacu**:  
-  ```bash
-  pacu
-  ```
+ 
+ 
 
-#### **Step 11: Wireless Network Enumeration**
-- **Aircrack-ng**:  
-  ```bash
-  airmon-ng start wlan0
-  airodump-ng wlan0mon
-  ```
-
-#### **Step 12: IoT & OT Device Enumeration**
-- **Shodan CLI**:  
-  ```bash
-  shodan search "webcam"
-  ```
-- **IoT-Scanner**:  
-  Visit: [https://cyber.dabamos.de/](https://cyber.dabamos.de/)  
+ 
 
